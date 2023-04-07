@@ -7,7 +7,7 @@ Included packages:
 
 ## Usage
 ```shell
-curl -s --compressed https://athrunsun.github.io/ppa/ubuntu/KEY.gpg | sudo apt-key add -
+sudo curl -s --compressed -o /etc/apt/trusted.gpg.d/athrun-ppa.gpg https://athrunsun.github.io/ppa/ubuntu/KEY.gpg 
 sudo curl -s --compressed -o /etc/apt/sources.list.d/athrun-ppa.list https://athrunsun.github.io/ppa/ubuntu/athrun_ppa.list
 sudo apt update
 
